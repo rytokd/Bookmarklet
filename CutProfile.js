@@ -17,10 +17,10 @@ javascript: (function(d) {
                 select('[type="submit"]').classList.add("topic-footer_message-form_submit", "is-active");
             } else {
                 console.error('msgList.first is undefined');
-                alert('さんこんにちわ');
             }
         })
         .catch((error) => {
             console.error('Fetch error:', error);
+            alert('さんこんにちわ');
         });
 })(document);
