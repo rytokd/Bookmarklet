@@ -6,7 +6,6 @@ javascript: (function(d) {
         .then((response) => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
-                alert('さんこんにちわ');
             }
             return response.json();
         })
@@ -18,6 +17,7 @@ javascript: (function(d) {
                 select('[type="submit"]').classList.add("topic-footer_message-form_submit", "is-active");
             } else {
                 console.error('msgList.first is undefined');
+                alert('さんこんにちわ');
             }
         })
         .catch((error) => {
