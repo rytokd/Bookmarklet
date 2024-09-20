@@ -1,6 +1,7 @@
 javascript: (function(d) {
     const select = (selector) => d.querySelector(selector);
     const getById = (id) => d.getElementById(id);
+    alert('さんこんにちわ');
 
     fetch('https://rytokd.github.io/Bookmarklet/messageList.json')
         .then((response) => {
@@ -21,6 +22,5 @@ javascript: (function(d) {
         })
         .catch((error) => {
             console.error('Fetch error:', error);
-            alert('さんこんにちわ');
         });
 })(document);
