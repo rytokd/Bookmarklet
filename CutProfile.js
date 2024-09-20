@@ -2,7 +2,7 @@ javascript: (function(d) {
     const select = (selector) => d.querySelector(selector);
     const getById = (id) => d.getElementById(id);
 
-    fetch('https://rytokd.github.io/Bookmarklet/msgList.json')
+    fetch('https://rytokd.github.io/Bookmarklet/messageList.json')
         .then((response) => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
