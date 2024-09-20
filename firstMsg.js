@@ -15,6 +15,8 @@ javascript: (function(d) {
                 select(".topic-footer").style.height = "250px";
                 getById("message_form_body").style.height = "250px";
                 select('[type="submit"]').classList.add("topic-footer_message-form_submit", "is-active");
+                select('[type="submit"]').classList.remove("is-disabled");
+                select('[type="submit"]').disabled = false;
             } else {
                 console.error('msgList.first is undefined');
             }
