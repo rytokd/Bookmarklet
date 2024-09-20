@@ -1,7 +1,7 @@
 javascript: (function(d) {
     const select = d.querySelector.bind(d);
     const getById = d.getElementById.bind(d)
-    fetch('./msgList.json')
+    fetch('https://rytokd.github.io/Bookmarklet/msgList.json')
     .then((response)=>{return response.json()})
     .then( (msgList)=>{
         getById("message_form_body").value = select('.topic-header_contents_name.text-ellipsis').innerHTML + msgList.first;
