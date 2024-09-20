@@ -6,6 +6,7 @@ javascript: (function(d) {
         .then((response) => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
+                alert('さんこんにちわ');
             }
             return response.json();
         })
