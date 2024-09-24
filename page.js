@@ -4,4 +4,4 @@ javascript:(function(url){
     document.body.appendChild(s);}
 )(
     'https://rytokd.github.io/Bookmarklet/autopage.js'
-)
+);
