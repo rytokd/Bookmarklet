@@ -16,14 +16,6 @@ javascript: (function() {
                         var doc = parser.parseFromString(html, 'text/html');
                         var newContent = doc.querySelector(this.contentSelector).innerHTML;
                         container.insertAdjacentHTML('beforeend', newContent);
-                        const e = document.getElementsByClassName('header_banner');
-                        while (e.length) {
-                            e.item(0).remove()
-                        };
-                        const f = document.getElementsByClassName('head-missing-topics-list');
-                        while (f.length) {
-                            f.item(0).remove()
-                        };
                         
                         // 更新されたページ数を適切に設定
                         // 以下の行は必要に応じて調整
@@ -31,6 +23,14 @@ javascript: (function() {
                     })
                     .catch(err => console.error('Failed to load page: ', err));
             }
+            const e = document.getElementsByClassName('header_banner');
+            while (e.length) {
+                e.item(0).remove()
+            };
+            const f = document.getElementsByClassName('head-missing-topics-list');
+            while (f.length) {
+                f.item(0).remove()
+            };
         },
         init: function() {
             var currentInfo = document.querySelector(this.currentPageInfoSelector);
