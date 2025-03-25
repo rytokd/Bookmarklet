@@ -11,7 +11,7 @@ javascript: (function(d) {
         })
         .then((msgList) => {
             if (msgList && msgList.first !== undefined) {
-                getById("message_form_body").value = select('.topic-header_contents_name.text-ellipsis').textContent + msgList.first;
+                getById("message_form_body").value = select('.topic-header_contents_name.text-ellipsis').textContent + messageList.first;
                 select(".topic-footer").style.height = "250px";
                 getById("message_form_body").style.height = "250px";
                 select('[type="submit"]').classList.add("topic-footer_message-form_submit", "is-active");
