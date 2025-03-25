@@ -5,7 +5,7 @@ javascript: (function() {
       input.replace(regEmoji, '')
   )
 	const nameClass = document.getElementsByClassName("topic-header_contents_name text-ellipsis");
-	document.getElementById("message_form_body").value = removeEmoji(nameClass[0].innerHTML) + "さんは\n";
+	document.getElementById("message_form_body").value += "\n" + removeEmoji(nameClass[0].innerHTML) + "さんは\n";
 	document.querySelector(".topic-footer").style.height = "250px";
 	document.getElementById("message_form_body").style.height = "250px";
 	document.querySelector('[type="submit"]').className = "topic-footer_message-form_submit is-active";
