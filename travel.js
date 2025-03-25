@@ -11,7 +11,7 @@ javascript: (function(d) {
         })
         .then((msgList) => {
             if (msgList && msgList.first !== undefined) {
-                getById("message_form_body").value += msgList.travel;
+                getById("message_form_body").value += messageList.travel;
                 select(".topic-footer").style.height = "250px";
                 getById("message_form_body").style.height = "250px";
                 select('[type="submit"]').classList.add("topic-footer_message-form_submit", "is-active");
